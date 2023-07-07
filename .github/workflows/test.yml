@@ -5,5 +5,12 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - run: tree
+            - uses: action/setup-node@v2
+                with:
+                    node-version: '18'
+            - name: Build the project
+              run: yarn build
+            - name: setup finish
+              run: echo "project setup"
+
       
