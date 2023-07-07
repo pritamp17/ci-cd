@@ -1,0 +1,14 @@
+name: My first Github Action
+on: [push]
+jobs:
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "hello world"
+            - run: eco "step 2"
+
+    unit-test:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "unit test"
+            - run: eco "unit test 2"
