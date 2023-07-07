@@ -1,9 +1,9 @@
 name: My first Github Action
-on:
-  - push
+on: [push]
 jobs:
-  print-hello-world:
-    runs-on: ubuntu-latest
-    steps:
-      - run: echo "hello world"
-      - run: eco "step 2"
+    print-hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "hello world"
+            - run: echo "step 2"
+      
